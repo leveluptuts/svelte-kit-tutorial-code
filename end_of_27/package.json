@@ -1,0 +1,30 @@
+{
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "next",
+		"@sveltejs/kit": "1.0.0-next.579",
+		"eslint": "^8.29.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"postcss": "^8.4.19",
+		"prettier": "^2.8.1",
+		"prettier-plugin-svelte": "^2.9.0",
+		"svelte": "^3.54.0",
+		"svelte-check": "^2.10.2",
+		"svelte-preprocess": "^4.10.7",
+		"typescript": "^4.9.4",
+		"vite": "^4.0.0"
+	},
+	"name": "blog",
+	"private": true,
+	"scripts": {
+		"build": "vite build",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
+		"dev": "vite dev",
+		"format": "prettier --plugin-search-dir . --write .",
+		"lint": "prettier --plugin-search-dir . --check . && eslint .",
+		"preview": "vite preview"
+	},
+	"type": "module",
+	"version": "0.0.1"
+}
